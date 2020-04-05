@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Reverse Int</title>
+ </head>
+ <body>
+  <header>
+  </header>
+  <script> 
+    function reverse (data) {
+
+      var letters = [], //иниц. массива;
+
+      l = data.length; // иниц. переменной параметра массива;
+
+      while (l--) { // декрементация переменной массива;
+
+        letters.push(data[l]); // добавление переменой в конец массива;
+
+      }
+
+      return parseInt(letters.join('')); // возврат целого числа;
+
+    }
+
+    prompt(reverse('-003210')); // вывод в ui браузера;
+    
+</script>
+ </body>
+</html>
